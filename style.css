@@ -8,9 +8,11 @@
   --light-grey: hsl(204, 43%, 93%);
   --transparent-grey: hsla(204, 43%, 93%, 80%);
   --greyish-blue: hsl(218, 22%, 67%);
+  --shadow-color: hsl(218, 22%, 47%);
 
   /* DESIGN */
   --corner: 10px;
+  --shadow: 0 0 30px -10px;
 }
 
 /* TYPOGRAPHY */
@@ -107,6 +109,10 @@ button {
   padding: 1em;
 }
 
+footer {
+  margin-top: 1rem;
+}
+
 /* COLOURS */
 
 body {
@@ -153,8 +159,10 @@ button {
 .container {
   border-radius: var(--corner);
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 button {
   border-radius: var(--corner);
+  box-shadow: var(--shadow) var(--shadow-color);
 }
