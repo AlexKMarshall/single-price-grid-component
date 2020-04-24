@@ -1,5 +1,69 @@
+/* VARIABLES */
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 52%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --transparent-grey: hsla(204, 43%, 93%, 80%);
+  --greyish-blue: hsl(218, 22%, 67%);
+}
+
 /* TYPOGRAPHY */
 
 body {
   font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+/* LAYOUT */
+
+/* COLOURS */
+
+body {
+  background-color: var(--light-grey);
+  color: var(--greyish-blue);
+}
+
+.container {
+  background-color: white;
+}
+
+#call-to-action {
+  background-color: var(--cyan);
+}
+
+#features {
+  background-color: var(--light-cyan);
+}
+
+h1 {
+  color: var(--cyan);
+}
+
+#value-prop h2 {
+  color: var(--bright-yellow);
+}
+
+#call-to-action,
+#features {
+  color: white;
+}
+
+.price,
+ul {
+  color: var(--transparent-grey);
+}
+
+.price span {
+  color: white;
+}
+
+button {
+  background-color: var(--bright-yellow);
 }
