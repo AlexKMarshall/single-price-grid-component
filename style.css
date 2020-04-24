@@ -17,8 +17,39 @@ body {
 }
 
 h1,
-h2 {
+h2,
+.accent,
+button {
   font-weight: 700;
+}
+
+h1 {
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+}
+
+.accent {
+  font-size: 0.9375rem;
+  letter-spacing: -0.015em;
+}
+
+p,
+li {
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.625rem;
+}
+
+li {
+  line-height: 1.5em;
 }
 
 /* LAYOUT */
@@ -38,6 +69,18 @@ body {
   grid-template-columns: auto;
   grid-auto-rows: 1fr;
 }
+
+.grid-item {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  padding: 1em;
+}
+
 /* COLOURS */
 
 body {
@@ -61,7 +104,7 @@ h1 {
   color: var(--cyan);
 }
 
-#value-prop h2 {
+#value-prop .accent {
   color: var(--bright-yellow);
 }
 
@@ -70,12 +113,12 @@ h1 {
   color: white;
 }
 
-.price,
+.price h3,
 ul {
   color: var(--transparent-grey);
 }
 
-.price span {
+.price h3 span {
   color: white;
 }
 
