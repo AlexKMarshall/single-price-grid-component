@@ -66,6 +66,12 @@ p {
   letter-spacing: -0.02em;
 }
 
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
 li {
   line-height: 1.5em;
 }
