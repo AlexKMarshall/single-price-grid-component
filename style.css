@@ -111,7 +111,7 @@ body {
   .container {
     max-width: 640px;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
   }
 
   #value-prop {
@@ -121,19 +121,9 @@ body {
 
 .grid-item {
   padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.grid-item * {
-  flex-grow: 1;
-}
-
-.spacer {
-  height: 1rem;
-  flex-grow: 0;
-  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 14px;
 }
 
 button {
